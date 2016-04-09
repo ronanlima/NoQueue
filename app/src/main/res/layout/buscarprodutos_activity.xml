@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:textColor="#4C4646" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_x="4dp"
+        android:layout_y="2dp"
+         /><!-- android:src="@drawable/noqueue" -->
+
+    <Button
+        android:id="@+id/botaopesquisar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="431dp"
+        android:onClick="botaoPesquisarProduto"
+        android:text="@string/pesquisar"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/informeopcao"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_x="20dp"
+        android:layout_y="168dp"
+        android:text="@string/informeOpcao"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rgopcoes"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="198dp" >
+
+        <RadioButton
+            android:id="@+id/pesqNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pesqNome"
+            android:textColor="#4C4646" />
+
+        <RadioButton
+            android:id="@+id/pesqPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pesqPreco"
+            android:textColor="#4C4646" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/campotextobusca"
+        android:layout_width="286dp"
+        android:layout_height="54dp"
+        android:layout_x="15dp"
+        android:layout_y="294dp"
+        android:background="#d3d3d3"
+        android:ems="10"
+        android:textSize="25sp" >
+
+        <requestFocus />
+    </EditText>
+
+</AbsoluteLayout>

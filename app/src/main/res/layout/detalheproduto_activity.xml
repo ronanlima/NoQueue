@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget566"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#FFFFFF"
+	android:textColor="#4C4646">
+
+    <TextView
+        android:id="@+id/widget42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="311dp"
+        android:text="@string/gordura"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/widget40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="28dp"
+        android:layout_y="247dp"
+        android:text="@string/proteinas"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/widget41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="28dp"
+        android:layout_y="279dp"
+        android:text="@string/carboidratos"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/widget43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="344dp"
+        android:text="@string/gorduraTrans"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/widget44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="375dp"
+        android:text="@string/calorias"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/widget45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="406dp"
+        android:text="@string/fibras"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/widget39"
+        android:layout_width="231dp"
+        android:layout_height="56dp"
+        android:layout_x="48dp"
+        android:layout_y="180dp"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/widget37"
+        android:layout_width="wrap_content"
+        android:layout_height="156dp"
+        android:layout_x="36dp"
+        android:layout_y="11dp"
+        /><!-- android:src="@drawable/file_salada_trio"  -->
+
+    <TextView
+        android:id="@+id/tvFibra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="120dp"
+        android:layout_y="410dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvCaloria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="146dp"
+        android:layout_y="375dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvGorduraTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="204dp"
+        android:layout_y="346dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvGordura"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_x="130dp"
+        android:layout_y="311dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvCarboidrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_x="190dp"
+        android:layout_y="279dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvProteina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_x="150dp"
+        android:layout_y="247dp"
+        android:textSize="25sp" />
+
+</AbsoluteLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textColor="#4C4646"
+    android:gravity="top">
+
+    <Button
+        android:id="@+id/buscarprodutos"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
+        android:layout_x="56dp"
+        android:layout_y="372dp"
+        android:onClick="botaoBuscarProdutos"
+        android:text="@string/buscarProdutos"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:layout_x="4dp"
+        android:layout_y="2dp"
+         /> <!-- android:src="@drawable/noqueue"-->
+
+    <Button
+        android:id="@+id/produtos"
+        android:layout_width="212dp"
+        android:layout_height="62dp"
+        android:layout_x="54dp"
+        android:layout_y="289dp"
+        android:onClick="listar"
+        android:text="@string/produtos" />
+
+    <Button
+        android:id="@+id/lerqrcode"
+        android:layout_width="211dp"
+        android:layout_height="63dp"
+        android:layout_x="52dp"
+        android:layout_y="198dp"
+        android:onClick="lerQR"
+        android:text="@string/lerQrcode" />
+
+</AbsoluteLayout>
