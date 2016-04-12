@@ -22,12 +22,12 @@ import br.ucb.noqueue.connection.WebService;
 import br.ucb.noqueue.util.Validator;
 
 public class BuscarProdutosActivity extends Activity {
-	public String url = null;
+	/*public String url = null;
 	public String response = "";
 	RadioButton rbNome = null;
 	RadioButton rbPreco = null;
 
-	/** Called when the activity is first created. */
+	*//** Called when the activity is first created. *//*
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -124,5 +124,5 @@ public class BuscarProdutosActivity extends Activity {
 
 	public ArrayList<Produto> preparaPesquisa(String parametroPesquisa) {
 		return null;
-	}
+	}*/
 }

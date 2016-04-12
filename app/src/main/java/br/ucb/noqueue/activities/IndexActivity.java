@@ -1,11 +1,5 @@
 package br.ucb.noqueue.activities;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
@@ -14,11 +8,22 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Process;
+import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import br.ucb.noqueue.R;
+import br.ucb.noqueue.connection.NoQueueService;
 import br.ucb.noqueue.connection.WebService;
 import br.ucb.noqueue.util.VerificaConexaoInternet;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class IndexActivity extends Activity {
 
@@ -69,7 +74,7 @@ public class IndexActivity extends Activity {
         }
     }
 
-    public void listar(View view) throws JSONException {
+    /*public void listar(View view) throws JSONException {
         JSONArray produtos = pesquisarProdutos("");
 
         String[] resultado = new String[produtos.length()];
@@ -84,6 +89,39 @@ public class IndexActivity extends Activity {
         intent.putExtras(b);
 
         startActivity(intent);
+    }*/
+
+    public void listar(View v) throws JSONException{
+        Call<JSONArray> call = NoQueueService.getInstance().getService().getAllProdutos("pesquisaProdutos");
+        call.enqueue(new Callback<JSONArray>() {
+            @Override
+            public void onResponse(Call<JSONArray> call, Response<JSONArray> response) {
+                if (response.isSuccess() && response.code() == 200){
+                    JSONArray produtos = response.body();
+                    String[] resultado = new String[produtos.length()];
+                    for (int i = 0; i < produtos.length(); i++) {
+                        try {
+                            resultado[i] = produtos.getString(i);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                    Intent intent = new Intent(getApplicationContext(), ShowProdutosActivity.class);
+                    Bundle b = new Bundle();
+                    b.putStringArray("selectedItems", resultado);
+
+                    intent.putExtras(b);
+
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<JSONArray> call, Throwable t) {
+                Log.d("IndexActivity", "Deu merda!!!");
+            }
+        });
     }
 
     public void lerQR(View view) {

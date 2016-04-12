@@ -28,10 +28,10 @@
             android:name="br.ucb.noqueue.activities.IndexActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
-        <activity
+        <!--<activity
             android:name="br.ucb.noqueue.activities.BuscarProdutosActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" />-->
         <activity
             android:name="br.ucb.noqueue.activities.ShowProdutosActivity"
             android:label="@string/app_name"

@@ -104,10 +104,11 @@ public class FinalizaCompraActivity extends Activity {
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("tipoOperacao", "pesquisaLoja");
 		params.put("loja", loja);
-		WebService ws = new WebService(url);
+		/*WebService ws = new WebService(url);
 		response = ws.webGet("", params);
 
-		return new JSONObject(response);
+		return new JSONObject(response);*/
+		return null;
 	}
 
 	public void verificaAno(Spinner spinner) {
@@ -214,8 +215,8 @@ public class FinalizaCompraActivity extends Activity {
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("tipoOperacao", "salvarPedido");
 		params.put("pedido", retorno);
-		WebService ws = new WebService(url);
-		ws.webGet("", params);
+//		WebService ws = new WebService(url);
+//		ws.webGet("", params);
 	}
 
 	private void enviarNotaFiscal(NotaFiscal notaFiscal) throws JSONException {
@@ -226,8 +227,8 @@ public class FinalizaCompraActivity extends Activity {
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("tipoOperacao", "salvarNota");
 		params.put("notaFiscal", retorno);
-		WebService ws = new WebService(url);
-		ws.webGet("", params);
+//		WebService ws = new WebService(url);
+//		ws.webGet("", params);
 	}
 
 }
